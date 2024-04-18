@@ -1,5 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("solidity-coverage");
+require("web3");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {

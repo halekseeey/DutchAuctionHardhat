@@ -1,5 +1,5 @@
 const hre = require("hardhat");
-const ethers = hre.ethers;
+const { ethers, network } = hre;
 const fs = require("fs");
 const path = require("path");
 
@@ -26,7 +26,8 @@ async function main() {
     "Motorbike"
   );
 
-  //   await auction.waitForDeployment();
+  // await auction.waitForDeployment();
+  console.log(await auction.getAddress());
 
   saveFrontendFiles({
     DutchAuction: auction,

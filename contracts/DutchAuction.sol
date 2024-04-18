@@ -2,6 +2,8 @@
 
 pragma solidity ^0.8.0;
 
+import 'hardhat/console.sol';
+
 contract DutchAuction {
     uint private constant DURATION = 2 days;
     address payable public immutable seller;
@@ -51,4 +53,4 @@ contract DutchAuction {
         stopped = true;
         emit Bought(price, msg.sender);
     }
-} 
+}

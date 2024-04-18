@@ -1,13 +1,27 @@
 # Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
-
-Try running some of the following tasks:
+web3 application of the Dutch auction. To start, you need to install dependencies
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
+npm install
+```
+
+run a blockchain node
+
+```shell
 npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+```
+
+deploy contract
+
+```shell
+npx hardhat run scripts/deploy.js --network localhost
+```
+
+end run frontend
+
+```shell
+cd frontend
+npm install
+npm run dev
 ```
